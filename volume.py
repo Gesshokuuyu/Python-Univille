@@ -5,4 +5,4 @@ larg = float(input('Insira a largura da caixa'))
 altu = float(input('Insira a altura da caixa'))
 
 volume = comp * larg * altu
-print('O volume é', volume)
+print('O volume calculado é de: ', volume)
