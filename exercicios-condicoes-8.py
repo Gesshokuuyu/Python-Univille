@@ -16,9 +16,13 @@ conhecimentos = float(input('Informe a nota em Conhecimentos Gerais: '))
 media = (portugues + matematica + conhecimentos) / 3
 menorNota = min(portugues, matematica, conhecimentos)
 
-if media >= 7 and menorNota >= 5:
-    print(f'O candidato: {candidato} foi aprovado com a média maior que 7 e todas as notas maiores que 5. \n Média final: {media}')
-elif media >= 7 and menorNota < 5:
-    print(f'O candidato: {candidato} foi aprovado com a média maior que 7 e com uma nota menor que 5. \n Média final: {media}')
-else: 
-    print(f'O candidato: {candidato} foi reprovado com a média {media}')
+situacao = "Aprovado" if media > 7 and menorNota >= 5 else "Reprovado"
+
+print("==========Vestibular==========")
+print(f"Nome: {candidato} \n")
+print(f'Nota em Matemática: {matematica}\n')
+print(f'Nota em Português: {portugues} \n')
+print(f'Nota em Conhecimentos Gerais: {conhecimentos}\n')
+print('===============================')
+print(f"Média: {media:.2f}")
+print(f"Sitação: {situacao}")
