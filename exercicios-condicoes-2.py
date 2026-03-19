@@ -3,8 +3,10 @@
 
 number = int(input('Informe um numero: '))
 
-if number >= 0:
+if number > 0:
     print(f'O número {number} é positivo')
+elif number == 0:
+    print('Esse número é neutro')
 else:
     print(f'O número {number} é negativo')
     
