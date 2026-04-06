@@ -16,5 +16,7 @@ else:
         print("compre o terceiro produto.")
     elif(p1 == p3 ):
         print("Escolha entre o produto 1 e 3.")
+    elif(p1 == p2 ):
+        print("Escolha entre o produto 1 e 2.")
     else:
         print("COmpre o primeiro prdouto")
