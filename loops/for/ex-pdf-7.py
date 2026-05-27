@@ -3,9 +3,16 @@
 # apenas por um e por ele mesmo. Assim, faça um programa que peça um número
 # inteiro e determine se ele é ou não um número primo
 
-numero = int(input("Informe um numero: "))
+numero = int(input("Informe um número: "))
 
-if(numero % 2 != 0):
-    print("Numero impar")
+qtdDivisores = 0
+
+for i in range(1, numero + 1):
+    if numero % i == 0:
+        qtdDivisores += 1
+
+
+if(qtdDivisores > 2):
+    print("Numero não é primo")
 else:
-    print("Numero primo")
+    print("Numero 1é primo")
